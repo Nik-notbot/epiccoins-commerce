@@ -22,25 +22,7 @@ export const Footer = () => {
   return (
     <footer className="py-12 border-t border-border bg-card/30">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-                <Icon
-                  name="Coins"
-                  size={20}
-                  className="text-primary-foreground"
-                />
-              </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                EpicCoins
-              </span>
-            </div>
-            <p className="text-muted-foreground">
-              Лучший сервис для покупки игровой валюты
-            </p>
-          </div>
-
+        <div className="grid md:grid-cols-3 gap-8">
           {footerSections.map((section, index) => (
             <div key={index}>
               <h5 className="font-semibold mb-3">{section.title}</h5>
