@@ -23,26 +23,23 @@ export const Header = () => {
             <Button
               variant="ghost"
               className="text-foreground hover:text-primary"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Главная
             </Button>
             <Button
               variant="ghost"
               className="text-foreground hover:text-primary"
+              onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Товары
             </Button>
             <Button
               variant="ghost"
               className="text-foreground hover:text-primary"
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             >
               О нас
-            </Button>
-            <Button
-              variant="ghost"
-              className="text-foreground hover:text-primary"
-            >
-              Поддержка
             </Button>
           </nav>
 
