@@ -30,7 +30,6 @@ export const Footer = () => {
             </div>
 
             <div className="flex flex-wrap gap-2">
-              <NewsletterModal />
               <PrivacyModal />
               <OfferModal />
               <ConfidentialModal />
