@@ -47,10 +47,6 @@ export const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-2">
-            <Button variant="outline" size="sm">
-              <Icon name="ShoppingCart" size={16} className="mr-2" />
-              Корзина
-            </Button>
           </div>
         </div>
       </div>
