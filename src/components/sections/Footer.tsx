@@ -25,7 +25,7 @@ export const Footer = () => {
         <div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-muted-foreground">
-              <p>&copy; 2024 EpicCoins. Все права защищены.</p>
+              <p>&copy; 2024 EpicCoins. Все права защищены. Конфиденциально.</p>
             </div>
 
             <div className="flex flex-wrap gap-2">
