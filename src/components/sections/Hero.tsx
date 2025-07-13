@@ -18,6 +18,10 @@ export const Hero = () => {
             <Button
               size="lg"
               className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90"
+              onClick={() => {
+                const productsSection = document.getElementById('products');
+                productsSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               <Icon name="Zap" size={20} className="mr-2" />
               Перейти к покупкам
