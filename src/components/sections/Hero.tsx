@@ -22,10 +22,6 @@ export const Hero = () => {
               <Icon name="Zap" size={20} className="mr-2" />
               Перейти к покупкам
             </Button>
-            <Button variant="outline" size="lg">
-              <Icon name="Play" size={20} className="mr-2" />
-              Как это работает
-            </Button>
           </div>
         </div>
       </div>
