@@ -14,7 +14,7 @@ export const ConfidentialModal = () => {
       <DialogTrigger asChild>
         <Button variant="outline" size="sm" className="text-xs">
           <Icon name="Shield" size={14} className="mr-1" />
-          Конфиденциально
+          Конфиденциальность
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-2xl max-h-[80vh] overflow-y-auto">
