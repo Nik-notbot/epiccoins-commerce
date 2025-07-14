@@ -33,7 +33,7 @@ export const PurchaseForm = ({ product, selectedAmount, onClose, onSubmit }: Pur
     }
   };
 
-  const totalCost = selectedAmount * product.pricePerUnit;
+  const totalCost = selectedAmount * product.basePrice;
 
   return (
     <div className="p-6 max-w-md mx-auto">
@@ -46,20 +46,20 @@ export const PurchaseForm = ({ product, selectedAmount, onClose, onSubmit }: Pur
 
       <div className="mb-4 p-4 bg-muted rounded-lg">
         <div className="flex items-center gap-3 mb-2">
-          <img 
-            src={product.image} 
-            alt={product.name} 
-            className="w-12 h-12 rounded-lg object-cover"
-          />
+          <div
+            className={`w-12 h-12 rounded-lg bg-gradient-to-r ${product.gradient} flex items-center justify-center`}
+          >
+            <Icon name={product.icon} size={24} className="text-white" />
+          </div>
           <div>
             <h3 className="font-medium">{product.name}</h3>
             <p className="text-sm text-muted-foreground">
-              {selectedAmount} {product.unit}
+              {selectedAmount} единиц
             </p>
           </div>
         </div>
         <div className="text-right">
-          <p className="text-lg font-semibold">{totalCost}₽</p>
+          <p className="text-lg font-semibold">{(selectedAmount * product.basePrice).toFixed(0)}₽</p>
         </div>
       </div>
 
