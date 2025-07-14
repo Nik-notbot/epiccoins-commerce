@@ -91,7 +91,7 @@ export const ProductCard = ({
             {selectedAmount > 0 && (
               <Button className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90">
                 <Icon name="ShoppingCart" size={16} className="mr-2" />
-                Добавить в корзину
+                Купить
               </Button>
             )}
           </div>
