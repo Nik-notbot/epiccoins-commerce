@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import Icon from "@/components/ui/icon";
+import { Modal } from "@/components/ui/modal";
+import { PurchaseForm } from "@/components/forms/PurchaseForm";
 import { Product } from "@/types/product";
 import { calculatePrice } from "@/utils/pricing";
 
@@ -17,8 +20,24 @@ export const ProductCard = ({
   selectedAmount,
   onAmountChange,
 }: ProductCardProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const updateAmount = (amount: number) => {
     onAmountChange(Math.max(0, amount));
+  };
+
+  const handlePurchase = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleFormSubmit = (data: { nickname: string; email: string }) => {
+    console.log('Purchase data:', {
+      product: product.name,
+      amount: selectedAmount,
+      totalPrice: calculatePrice(product, selectedAmount),
+      ...data
+    });
+    alert(`Спасибо за покупку! Никнейм: ${data.nickname}, Email: ${data.email}`);
   };
 
   return (
@@ -89,7 +108,10 @@ export const ProductCard = ({
             )}
 
             {selectedAmount > 0 && (
-              <Button className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90">
+              <Button 
+                onClick={handlePurchase}
+                className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90"
+              >
                 <Icon name="ShoppingCart" size={16} className="mr-2" />
                 Купить
               </Button>
@@ -138,6 +160,15 @@ export const ProductCard = ({
           </div>
         </div>
       </CardContent>
+      
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <PurchaseForm
+          product={product}
+          selectedAmount={selectedAmount}
+          onClose={() => setIsModalOpen(false)}
+          onSubmit={handleFormSubmit}
+        />
+      </Modal>
     </Card>
   );
 };
