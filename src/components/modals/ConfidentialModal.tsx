@@ -98,7 +98,8 @@ export const ConfidentialModal = () => {
             <h4 className="font-semibold mb-2">8. Контактная информация</h4>
             <div className="text-muted-foreground space-y-1">
               <p>По вопросам конфиденциальности:</p>
-              <p>Email: privacy@epiccoins.ru</p>
+              <p>Email: alamakduetni4@gmail.com
+</p>
               <p>Телефон: +7 (996) 325-24-23</p>
             </div>
           </div>
