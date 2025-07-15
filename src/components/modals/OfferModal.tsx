@@ -27,10 +27,8 @@ export const OfferModal = () => {
         <div className="space-y-4 text-sm">
           <div>
             <h4 className="font-semibold mb-2">1. Стороны договора</h4>
-            <p className="text-muted-foreground">
-              <strong>Исполнитель:</strong> ООО «EpicCoins» - поставщик услуг по продаже игровой валюты.<br/>
-              <strong>Заказчик:</strong> физическое или юридическое лицо, принимающее условия данной оферты и оплачивающее услуги исполнителя.
-            </p>
+            <p className="text-muted-foreground">Исполнитель: EpicCoins - поставщик услуг по продаже игровой валюты.
+Заказчик: физическое или юридическое лицо, принимающее условия данной оферты и оплачивающее услуги исполнителя.</p>
           </div>
 
           <div>
