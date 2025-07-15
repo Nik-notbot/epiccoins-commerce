@@ -79,7 +79,7 @@ export const OfferModal = () => {
             <h4 className="font-semibold mb-2">6. Контактная информация</h4>
             <div className="text-muted-foreground space-y-1">
               <p>Email: support@epiccoins.ru</p>
-              <p>Телефон: +7 (800) 123-45-67</p>
+              <p>Телефон: +7 (996) 325-24-23</p>
               <p>Время работы: 24/7</p>
             </div>
           </div>
