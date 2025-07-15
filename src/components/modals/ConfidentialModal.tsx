@@ -99,7 +99,7 @@ export const ConfidentialModal = () => {
             <div className="text-muted-foreground space-y-1">
               <p>По вопросам конфиденциальности:</p>
               <p>Email: privacy@epiccoins.ru</p>
-              <p>Телефон: +7 (800) 123-45-67</p>
+              <p>Телефон: +7 (996) 325-24-23</p>
             </div>
           </div>
 
