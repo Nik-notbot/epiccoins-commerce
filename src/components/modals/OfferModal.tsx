@@ -26,11 +26,10 @@ export const OfferModal = () => {
         </DialogHeader>
         <div className="space-y-4 text-sm">
           <div>
-            <h4 className="font-semibold mb-2">1. Общие положения</h4>
+            <h4 className="font-semibold mb-2">1. Стороны договора</h4>
             <p className="text-muted-foreground">
-              Настоящая публичная оферта является официальным предложением ООО
-              «EpicCoins» заключить договор на оказание услуг по продаже игровой
-              валюты.
+              <strong>Исполнитель:</strong> ООО «EpicCoins» - поставщик услуг по продаже игровой валюты.<br/>
+              <strong>Заказчик:</strong> физическое или юридическое лицо, принимающее условия данной оферты и оплачивающее услуги исполнителя.
             </p>
           </div>
 
@@ -79,7 +78,7 @@ export const OfferModal = () => {
             <h4 className="font-semibold mb-2">6. Контактная информация</h4>
             <div className="text-muted-foreground space-y-1">
               <p>Email: support@epiccoins.ru</p>
-              <p>Телефон: +7 (996) 325-24-23</p>
+              <p>Телефон: +7 9 96 325-24-23</p>
               <p>Время работы: 24/7</p>
             </div>
           </div>
