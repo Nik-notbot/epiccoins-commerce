@@ -77,7 +77,7 @@ export const OfferModal = () => {
             <div className="text-muted-foreground space-y-1">
               <p>Email: alamakduetni4@gmail.com
 </p>
-              <p>Телефон: +7 9 96 325-24-23</p>
+              <p>Телефон: +7 (996) 325-24-23</p>
               <p>Время работы: 24/7</p>
             </div>
           </div>
