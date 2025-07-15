@@ -98,21 +98,13 @@ export const PurchaseForm = ({ product, selectedAmount, onClose, onSubmit }: Pur
             Отмена
           </Button>
           <Button 
-            type="submit" 
-            disabled={!nickname.trim() || !email.trim() || isSubmitting}
+            type="button"
+            disabled={!nickname.trim() || !email.trim()}
             className="flex-1 bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90"
+            onClick={() => window.open('https://t.me/ocasiocortezzz', '_blank')}
           >
-            {isSubmitting ? (
-              <>
-                <Icon name="Loader2" size={16} className="mr-2 animate-spin" />
-                Обработка...
-              </>
-            ) : (
-              <>
-                <Icon name="CreditCard" size={16} className="mr-2" />
-                Оплатить {totalCost}₽
-              </>
-            )}
+            <Icon name="CreditCard" size={16} className="mr-2" />
+            Оплатить {totalCost}₽
           </Button>
         </div>
       </form>
