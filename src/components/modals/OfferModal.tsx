@@ -73,7 +73,32 @@ export const OfferModal = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-2">6. Контактная информация</h4>
+            <h4 className="font-semibold mb-2">6. Условия возврата</h4>
+            <ul className="text-muted-foreground space-y-1">
+              <li>• <strong>Сроки подачи заявления:</strong> в течение 14 дней с момента оплаты</li>
+              <li>• <strong>Основания для возврата:</strong>
+                <ul className="ml-4 mt-1 space-y-1">
+                  <li>- Услуга не оказана в полной мере</li>
+                  <li>- Валюта не поступила на игровой аккаунт</li>
+                  <li>- Технические проблемы, препятствующие доставке</li>
+                  <li>- Ошибка в размере или типе валюты</li>
+                  <li>- Отказ от услуги до начала её оказания</li>
+                </ul>
+              </li>
+              <li>• <strong>Сроки возврата:</strong> в течение 5-10 рабочих дней с момента подачи заявления</li>
+              <li>• <strong>Контакты для возврата:</strong>
+                <ul className="ml-4 mt-1 space-y-1">
+                  <li>- Email: alamakduetni4@gmail.com</li>
+                  <li>- Телефон: +7 (996) 325-24-23</li>
+                  <li>- Время обработки заявок: 24/7</li>
+                </ul>
+              </li>
+              <li>• <strong>Способ возврата:</strong> возврат осуществляется на карту или кошелек, с которого поступил платеж</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-2">7. Контактная информация</h4>
             <div className="text-muted-foreground space-y-1">
               <p>Email: alamakduetni4@gmail.com
 </p>
