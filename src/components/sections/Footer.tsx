@@ -3,6 +3,7 @@ import { NewsletterModal } from "@/components/modals/NewsletterModal";
 import { PrivacyModal } from "@/components/modals/PrivacyModal";
 import { OfferModal } from "@/components/modals/OfferModal";
 import { ConfidentialModal } from "@/components/modals/ConfidentialModal";
+import { SupportModal } from "@/components/modals/SupportModal";
 
 const footerSections = [
   {
@@ -30,6 +31,7 @@ export const Footer = () => {
             </div>
 
             <div className="flex flex-wrap gap-2">
+              <SupportModal />
               <PrivacyModal />
               <OfferModal />
               <ConfidentialModal />
